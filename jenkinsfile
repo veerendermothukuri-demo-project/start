@@ -1,0 +1,21 @@
+#!groovy
+peline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+               echo 'development phase'
+            }
+        }
+        stage('Test') { 
+            steps {
+                echo 'testing phase' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                echo 'deployment phase' 
+            }
+        }
+    }
+}
