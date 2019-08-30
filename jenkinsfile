@@ -17,5 +17,10 @@ peline {
                 echo 'deployment phase' 
             }
         }
+        stage('store') {
+            steps {
+                echo 'storing phase'
+            }
+        }
     }
 }
